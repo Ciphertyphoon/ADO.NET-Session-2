@@ -190,6 +190,8 @@
     <Content Include="Site.Master" />
     <Content Include="SQLCommand.aspx" />
     <Content Include="SQLInjection.aspx" />
+    <Content Include="SQLInjectionPrevention.aspx" />
+    <Content Include="StoredProcedures.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -273,6 +275,20 @@
     </Compile>
     <Compile Include="SQLInjection.aspx.designer.cs">
       <DependentUpon>SQLInjection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLInjectionPrevention.aspx.cs">
+      <DependentUpon>SQLInjectionPrevention.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SQLInjectionPrevention.aspx.designer.cs">
+      <DependentUpon>SQLInjectionPrevention.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures.aspx.cs">
+      <DependentUpon>StoredProcedures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoredProcedures.aspx.designer.cs">
+      <DependentUpon>StoredProcedures.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

@@ -9,13 +9,12 @@ using System.Web.UI.WebControls;
 
 namespace Sample_ADO.NetWebApplication
 {
-    public partial class SQLInjection : System.Web.UI.Page
+    public partial class SQLInjectionPrevention : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
         protected void GetProductsButton_Click(object sender, EventArgs e)
         {
             string ConnectionString = ConfigurationManager.ConnectionStrings["SilverCyanide"].ConnectionString;
@@ -29,8 +28,10 @@ namespace Sample_ADO.NetWebApplication
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                 // Parameterized query. @ProductName is the parameter
-                string Command = "Select * from tblProductInventory where ProductName like @ProductName";
+                string Command = "spGetProductsByName";
                 SqlCommand cmd = new SqlCommand(Command, connection);
+                // Specify that the T-SQL command is a stored procedure
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 // Provide the value for the parameter
                 cmd.Parameters.AddWithValue("@ProductName", ProductNameTextBox.Text + "%");
 
@@ -42,6 +43,7 @@ namespace Sample_ADO.NetWebApplication
                 //Sql profiler
                 //exec sp_executesql N'Select * from tblProductInventory where ProductName like @ProductName',N'@ProductName nvarchar(39)',@ProductName = N'i''; Delete from tblProductInventory --%'
             }
+            //Execute spGetProductsByName 'ip'
         }
     }
 }

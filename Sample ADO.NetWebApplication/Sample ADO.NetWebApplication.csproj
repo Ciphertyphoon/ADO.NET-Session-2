@@ -188,6 +188,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SimpleRead.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="SQLCommand.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -257,6 +258,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SQLCommand.aspx.cs">
+      <DependentUpon>SQLCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SQLCommand.aspx.designer.cs">
+      <DependentUpon>SQLCommand.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

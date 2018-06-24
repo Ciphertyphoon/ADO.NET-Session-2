@@ -141,6 +141,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DataAdapterwithDataset.aspx" />
+    <Content Include="DataAdapterwithStoredprocedure.aspx" />
     <Content Include="DataReaderObjNext.aspx" />
     <Content Include="DataReaderObjs.aspx" />
     <Content Include="Default.aspx" />
@@ -225,6 +227,20 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdapterwithDataset.aspx.cs">
+      <DependentUpon>DataAdapterwithDataset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAdapterwithDataset.aspx.designer.cs">
+      <DependentUpon>DataAdapterwithDataset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAdapterwithStoredprocedure.aspx.cs">
+      <DependentUpon>DataAdapterwithStoredprocedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAdapterwithStoredprocedure.aspx.designer.cs">
+      <DependentUpon>DataAdapterwithStoredprocedure.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataReaderObjNext.aspx.cs">
       <DependentUpon>DataReaderObjNext.aspx</DependentUpon>

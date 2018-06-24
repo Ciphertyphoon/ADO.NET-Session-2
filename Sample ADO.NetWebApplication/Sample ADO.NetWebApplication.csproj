@@ -141,6 +141,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DataReaderObjNext.aspx" />
+    <Content Include="DataReaderObjs.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -186,6 +188,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SimpleDataReader.aspx" />
     <Content Include="SimpleRead.aspx" />
     <Content Include="Site.Master" />
     <Content Include="SQLCommand.aspx" />
@@ -223,6 +226,20 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataReaderObjNext.aspx.cs">
+      <DependentUpon>DataReaderObjNext.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataReaderObjNext.aspx.designer.cs">
+      <DependentUpon>DataReaderObjNext.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataReaderObjs.aspx.cs">
+      <DependentUpon>DataReaderObjs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataReaderObjs.aspx.designer.cs">
+      <DependentUpon>DataReaderObjs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +257,13 @@
     </Compile>
     <Compile Include="SampleConnection.aspx.designer.cs">
       <DependentUpon>SampleConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDataReader.aspx.cs">
+      <DependentUpon>SimpleDataReader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimpleDataReader.aspx.designer.cs">
+      <DependentUpon>SimpleDataReader.aspx</DependentUpon>
     </Compile>
     <Compile Include="SimpleRead.aspx.cs">
       <DependentUpon>SimpleRead.aspx</DependentUpon>

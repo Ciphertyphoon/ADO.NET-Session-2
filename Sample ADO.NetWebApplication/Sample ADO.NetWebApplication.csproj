@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CachingDataset.aspx" />
     <Content Include="ConnectionStrings.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -145,6 +146,7 @@
     <Content Include="DataAdapterwithStoredprocedure.aspx" />
     <Content Include="DataReaderObjNext.aspx" />
     <Content Include="DataReaderObjs.aspx" />
+    <Content Include="DataSetASP.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -214,6 +216,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CachingDataset.aspx.cs">
+      <DependentUpon>CachingDataset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CachingDataset.aspx.designer.cs">
+      <DependentUpon>CachingDataset.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ConnectionStrings.aspx.cs">
       <DependentUpon>ConnectionStrings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,6 +264,13 @@
     </Compile>
     <Compile Include="DataReaderObjs.aspx.designer.cs">
       <DependentUpon>DataReaderObjs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetASP.aspx.cs">
+      <DependentUpon>DataSetASP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataSetASP.aspx.designer.cs">
+      <DependentUpon>DataSetASP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

@@ -196,6 +196,7 @@
     <Content Include="SimpleRead.aspx" />
     <Content Include="Site.Master" />
     <Content Include="SQLCommand.aspx" />
+    <Content Include="SimpleSqlCommandBuilder.aspx" />
     <Content Include="SQLInjection.aspx" />
     <Content Include="SQLInjectionPrevention.aspx" />
     <Content Include="StoredProcedures.aspx" />
@@ -324,6 +325,13 @@
     </Compile>
     <Compile Include="SQLCommand.aspx.designer.cs">
       <DependentUpon>SQLCommand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleSqlCommandBuilder.aspx.cs">
+      <DependentUpon>SimpleSqlCommandBuilder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SimpleSqlCommandBuilder.aspx.designer.cs">
+      <DependentUpon>SimpleSqlCommandBuilder.aspx</DependentUpon>
     </Compile>
     <Compile Include="SQLInjection.aspx.cs">
       <DependentUpon>SQLInjection.aspx</DependentUpon>

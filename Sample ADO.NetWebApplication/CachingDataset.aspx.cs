@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Sample ADO.NetWebApplication
+// Author           : jonna
+// Created          : 06-30-2018
+//
+// Last Modified By : jonna
+// Last Modified On : 06-30-2018
+// ***********************************************************************
+// <copyright file="CachingDataset.aspx.cs" company="">
+//     Copyright ©  2018
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -10,13 +23,27 @@ using System.Web.UI.WebControls;
 
 namespace Sample_ADO.NetWebApplication
 {
+    /// <summary>
+    /// Class CachingDataset.
+    /// </summary>
+    /// <seealso cref="System.Web.UI.Page" />
     public partial class CachingDataset : System.Web.UI.Page
     {
+        /// <summary>
+        /// Handles the Load event of the Page control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnLoadData control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnLoadData_Click(object sender, EventArgs e)
         {
             // Check if the DataSet is present in the cache
@@ -48,6 +75,11 @@ namespace Sample_ADO.NetWebApplication
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnClearnCache control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnClearnCache_Click(object sender, EventArgs e)
         {
             // Check if the DataSet is present in the cache

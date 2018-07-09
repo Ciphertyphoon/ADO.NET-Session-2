@@ -68,12 +68,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StronglyTypedDatasets.aspx" />
     <Content Include="UntypedDatasets.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StronglyTypedDatasets.aspx.cs">
+      <DependentUpon>StronglyTypedDatasets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StronglyTypedDatasets.aspx.designer.cs">
+      <DependentUpon>StronglyTypedDatasets.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
+    <Compile Include="StudentDataSet.cs">
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UntypedDatasets.aspx.cs">
       <DependentUpon>UntypedDatasets.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,6 +100,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="StudentDataSet.xsc">
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="StudentDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="StudentDataSet.xss">
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

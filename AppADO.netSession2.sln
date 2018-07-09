@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisconnectedDataAccess", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceptRejectChanges", "AcceptRejectChanges\AcceptRejectChanges.csproj", "{7F73643F-EF39-4E04-860B-E92F25A08905}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StronglyTypedDatasets", "StronglyTypedDatasets\StronglyTypedDatasets.csproj", "{942155CE-A549-4B38-AFB2-14C21A9CCD03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7F73643F-EF39-4E04-860B-E92F25A08905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F73643F-EF39-4E04-860B-E92F25A08905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F73643F-EF39-4E04-860B-E92F25A08905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942155CE-A549-4B38-AFB2-14C21A9CCD03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942155CE-A549-4B38-AFB2-14C21A9CCD03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942155CE-A549-4B38-AFB2-14C21A9CCD03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942155CE-A549-4B38-AFB2-14C21A9CCD03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
